@@ -1,0 +1,248 @@
+<div class="container-fluid my-4">
+    <div class="row">
+        <h2>Frequently Asked Questions</h2>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="allData()">All</button>
+            </div>
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="registrate()">Registration</button>
+            </div>
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="login()">Login</button>
+            </div>
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="certify()">Certificate</button>
+            </div>
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="medical()">Medical</button>
+            </div>
+            <div class="col-2 my-2">
+                <button type="button" class="btn btn-outline-primary" (click)="raise()">Raise An Issue</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--All-->
+<section *ngIf="showAll">
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <strong> Where can I register for COVID-19 vaccination?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>You can log into the CoWIN portal using the link www.cowin.gov.in and click on
+                        the “Register / Sign In yourself” tab to register for COVID-19 vaccination</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <strong>Can you only access the CoWIN website and register to get
+                        your vaccination certificate a limited number of times in a day?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>No, there is no limitation in the number of times one normally logs in to CoWIN portal and
+                        accesses the certificate. However, if one tries innumerably, the system treats such cases as a
+                        bug. If one inadvertently enters a wrong OTP,
+                        a waiting period of 180 seconds is to be maintained before one can request another OTP.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <strong>After trying once do you need to wait certain amount of time to
+                        try again? In other words, can you only do it once every hour or so.</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>No, if you have given wrong OTP 3 times, the system will not allow to login from the same
+                        instance. To login again refresh the
+                        browser to create a new instance and login with your mobile no and new otp.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <strong>Is there a mobile app that needs to be installed to register for vaccination?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>There is no authorised mobile app for registering for vaccination in India except Aarogya Setu.
+                        You need to log into the CoWIN portal. Alternatively,
+                        you can also register for vaccination through the Aarogya Setu app and Umang app.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---Registration-->
+<section *ngIf="showReg">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <strong>Where can I register for COVID-19 vaccination?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>You can log into the CoWIN portal using the link www.cowin.gov.in and click on
+                        the
+                        “Register / Sign In yourself” tab to register for COVID-19 vaccination.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <strong>
+                        Can you only access the CoWIN website and register
+                        to get your vaccination certificate a limited number of times in a day?
+                    </strong>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>
+                        No, there is no limitation in the number of times one normally logs in to CoWIN
+                        portal and accesses the certificate. However, if one tries innumerably, the
+                        system treats such cases as a bug. If one inadvertently enters a wrong OTP,
+                        a waiting period of 180 seconds is to be maintained before one can request
+                        another OTP
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <strong>After trying once do you need to wait certain amount of time to try again?
+                        In other words, can you only do it once every hour or so.</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>No, if you have given wrong OTP 3 times, the system will not allow to login from
+                        the same instance. To login again refresh the browser to create a new
+                        instance and login with your mobile no and new otp.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <strong>Is there a mobile app that needs to be installed to register for
+                        vaccination?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>There is no authorised mobile app for registering for vaccination in India except
+                        Aarogya Setu. You need to log into the CoWIN portal.
+                        Alternatively, you can also register for vaccination through the Aarogya Setu
+                        app and Umang app</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---Login-->
+<section>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <strong>Can I book an appointment for vaccination in the CoWIN portal?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Yes, you can book appointment for vaccination through CoWIN portal after
+                        logging-in to the CoWIN Portal through your registered mobile number</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <strong>What are the options if one citizen is aged 45 or above and other is aged 18 or
+                        above?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>If one beneficiary is aged 45 or above and other beneficiary is aged 18 to 44 years
+                        and both want to schedule a combined appointment, then only private paid vaccination
+                        centers or vaccination centers as per State’s policy will be made available. However,
+                        it may happen that some hospitals which are catering to people with 45 years or more may not
+                        allow the booking
+                        of appointments for people with lesser age. In that case you may make bookings one by one</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <strong>Can I check the vaccine being administered at each Vaccination Center?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Yes, while scheduling an appointment for vaccination, the system will show vaccination center
+                         names along with the name of the vaccine that will be administered.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <strong>Can I download appointment slip?</strong>
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Yes, the appointment slip can be downloaded after the appointment has been scheduled.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

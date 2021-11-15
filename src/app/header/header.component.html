@@ -1,0 +1,121 @@
+<div class=" continer-fluid bg-dark">
+  <div class="row">
+    <div class="col-7">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="Admin/dashboard">Administrator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="Vaccinator">Vaccinator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">verify certificate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" routerLink="Dashboard/summaryDash">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Open API's</a>
+        </li>
+</ul>
+</div>
+<div class="col-5">
+  <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-light mx-4" href="#">Skip To Main Content</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A+ </button>
+          <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A</button>
+          <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A-</button>
+        </li>
+        <div class="my-2 mx-3">
+          <select class="bg-dark text-light">
+            <option *ngFor="let lg of lang">{{lg}}</option>
+          </select>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container-fuild bg-dark text-light">
+    <div class="row">
+      <div class="col-5">
+        <img src="../../assets/new-logo.svg">
+      </div>
+
+
+      <div class="col-7">
+        <!-- <a class="btn btn-link" routerLink="">English</a> -->
+
+        <div class="dropdown mt-4">
+          <!-- <li class="nav-item px-3 mt-2"> -->
+          <a class="dropbtn text-white" (click)="navigateToStaff()"><b>VACCINATION SERVICES</b></a>
+          <div class="dropdown-content">
+            <a routerLink="teaching-staff">Register Members</a>
+            <a routerLink="non-teaching-staff">Search Vaccination Centers</a>
+            <a routerLink="non-teaching-staff">Book Vaccination Slots</a>
+            <a routerLink="non-teaching-staff">Manage Appoinment</a>
+            <a routerLink="non-teaching-staff">Download Certificate</a>
+
+          </div>
+
+          <!-- </li> -->
+        </div>
+
+
+
+        <div class="dropdown">
+          <!-- <li class="nav-item px-3 mt-2"> -->
+          <a class="dropbtn text-white" (click)="navigateToPlatform()"><b>PLATFORM</b></a>
+          <div class="dropdown-content">
+            <a routerLink="teaching-staff">CoWIN Internationl</a>
+            <a routerLink="non-teaching-staff">Vaccinator</a>
+            <a routerLink="non-teaching-staff">Department Login</a>
+            <a routerLink="non-teaching-staff">Verify Certificate</a>
+            <a routerLink="non-teaching-staff">Vaccination Statistics</a>
+
+          </div>
+
+          <!-- </li> -->
+        </div>
+
+
+        <div class="dropdown">
+          <!-- <li class="nav-item px-3 mt-2"> -->
+          <a class="dropbtn text-white" (click)="navigateToResources()"><b>RESOURCES</b></a>
+          <div class="dropdown-content">
+            <a routerLink="teaching-staff">How To Get Vaccinated</a>
+            <a routerLink="non-teaching-staff">Dos and Dont's</a>
+            <a routerLink="non-teaching-staff">Overview</a>
+            <a routerLink="non-teaching-staff">API Guidelines</a>
+            <a routerLink="non-teaching-staff">Grievance Guidelines</a>
+
+          </div>
+
+          <!-- </li> -->
+        </div>
+
+
+        <div class="dropdown">
+          <!-- <li class="nav-item px-3 mt-2"> -->
+          <a class="dropbtn text-white" (click)="navigateToSupport()"><b>SUPPORT</b></a>
+          <div class="dropdown-content">
+            <a routerLink="teaching-staff">Frequently Asked Questions</a>
+            <a routerLink="non-teaching-staff">Certificate Corrections</a>
+          </div>
+
+          </div>
+          <a routerLink="signIn/register-member"> 
+             <button type="button" class=" col btn btn-light bg-dark text-light">
+           Register/Sign In</button></a>
+ 
+          <!-- </li> -->
+        
+
+        

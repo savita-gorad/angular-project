@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <h6>Vaccination trend</h6>
+            <button (click)="byDose()" class="my-4">By Dose</button>
+            <button>By Age</button>
+        </div>
+        <div class="col-8"></div>
+        <div class="col-2">
+            <a routerLink="#">Today</a>
+        </div>
+        
+        <div class="divChart">
+            <canvas id="myChart" *ngIf="dose"></canvas>
+        </div>
+    </div>
+</div>

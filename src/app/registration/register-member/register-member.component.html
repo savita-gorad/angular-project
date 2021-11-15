@@ -1,0 +1,58 @@
+<div class="container-fuild">
+    <!-- <div class="row header">
+       <div class="col-6 ">
+           <img src="../../../assets/emblem-gov.svg">
+       </div> 
+       <div class="col-6">
+    <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light mx-4" href="#">Skip To Main Content</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A+ </button>
+            <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A</button>
+            <button type="button" class=" col btn btn-light bg-dark text-light mx-1">A-</button>
+          </li>
+          <div class="my-2 mx-3">
+            <select class="bg-dark text-light">
+              <option *ngFor="let lg of lang">{{lg}}</option>
+            </select>
+          </div>
+        </ul>
+      </div>
+       </div> -->
+       <div class="row my-4">
+           <div class="col-4"></div>
+<div class="col-4 box">
+       <form *ngIf="generate">
+           <h4>Register or Sign In for Vaccination</h4>
+           <p>An OTP will be sent to your mobile number for verification</p>
+           <input type="tel" placeholder="Enter your mobile number" 
+           name="userMobile" [(ngModel)]="mobNo"><br><br>
+       
+       <button class="btn btn-primary" style="width: 350px;" (click)="generateOTP()"
+       > Get OTP</button><br><br>
+      </form><br>
+
+      <form *ngIf="confirm">
+       <input type="tel" placeholder="confirm OTP" name="userMobile" [(ngModel)]="OTP">
+       <button (click)="confirmOTP()"  >Confirm OTP</button>
+      
+      </form>
+      
+       <p style="font-size: 12px;">By Sign In/Registration, 
+        I agree to the <a href="#">Terms of Service and Privacy Policy</a></p>
+        <b>OR BOOK APPOINTMENT USING</b>
+        <div class="row">
+        <div class="col-6">
+            <img src="../../../assets/img-3.png"> 
+        </div>
+        <div class="col-6">
+            <img src="../../../assets/img-2.png">
+        </div>
+    </div>
+    </div>
+    <div class="col-4"></div>
+</div>
+
+</div>

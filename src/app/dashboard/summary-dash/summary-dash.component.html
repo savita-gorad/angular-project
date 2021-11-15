@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row my-5">
+        <div class="col-3 box">Registration Today</div>
+        <div class="col-3 box">Vaccination Today</div>
+        <div class="col-3 box">partially vaccinated today</div>
+        <div class="col-3 box">fully vaccinated Today</div>
+    </div>
+    <div class="row my-5">
+        <div class="col-4">
+            <img src="../../../assets/home_india.svg">
+            <b>India</b>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="row">
+                <div class="col-6">
+                    <select class="options">
+                        <option *ngFor="let st of state">{{st}}</option>
+                    </select>
+        </div>
+        <div class="col-6">
+            <select class="options">
+                <option *ngFor="let dt of District">{{dt}}</option>
+            </select><br><br>
+            <select>
+                <option *ngFor="let ex of export">{{ex}}</option>
+            </select>
+        </div>
+        </div>
+    </div>
+</div>
+<app-vaccination-trend></app-vaccination-trend>

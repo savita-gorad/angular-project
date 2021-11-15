@@ -1,0 +1,41 @@
+<div class="container-fuild">
+    <div class="row mx-4 py-4">
+
+        <div class="col-3"></div>
+        <div class="col-6">
+        <h2>
+            Search Your Nearest Vaccination Center
+        </h2> <br>
+        <p>
+            Get a preview list of the nearest centers and check availability of vaccination slots
+        </p><br>
+        <a routerLink="#">Login to book your slots</a><br><br>
+   <div class="row">
+       <div class="col-3">
+    <input type="button" class="btn-search"value="By District">
+    </div>
+    <div class="col-3">
+    <input type="button" value="By PIN">
+</div>
+<div class="col-3">
+    <input type="button" value='On the Map'> 
+</div>
+<br><br>
+<div class="col-4">
+<select class="options" (change)="onStateSelect($event)" name="state" [(ngModel)]="selectedState">
+    <option *ngFor="let st of userState"  [ngValue]="st.state_id">{{st.state_name}}</option>
+</select>
+</div>
+<div class="col-4">
+<select class="options">
+    <option *ngFor="let ds of userDistrict">{{ds.district_name}}</option>
+</select>
+</div>
+<div class="col-4">
+<button type="button" class="btn btn-primary">Search</button>
+</div>
+</div>
+</div>
+<div class="col-3"></div>
+</div>
+

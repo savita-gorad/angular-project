@@ -1,0 +1,15 @@
+.summary{
+    background-color: darkblue;
+    color: white;
+}
+
+.button {
+    border-radius: 7px;
+    background-color: darkblue;
+    border: 2px solid white;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}

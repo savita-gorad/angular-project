@@ -1,0 +1,12 @@
+
+  img{
+      width: 70px;
+  }
+  .count{
+      background-color: rgb(228, 225, 188);
+      padding: 50px;
+  }
+  .countimg{
+      width: 200px;
+      /* margin-left: 40px; */
+  }
